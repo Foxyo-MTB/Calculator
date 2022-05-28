@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7401C8D32840DF6D0000FB6E /* CalcConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401C8D22840DF6D0000FB6E /* CalcConstants.swift */; };
 		741A0D0228392661001254E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741A0D0128392661001254E2 /* AppDelegate.swift */; };
 		741A0D0428392661001254E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741A0D0328392661001254E2 /* SceneDelegate.swift */; };
 		741A0D0628392661001254E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741A0D0528392661001254E2 /* ViewController.swift */; };
-		741A0D0928392661001254E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741A0D0728392661001254E2 /* Main.storyboard */; };
 		741A0D0B28392661001254E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741A0D0A28392661001254E2 /* Assets.xcassets */; };
 		741A0D0E28392661001254E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741A0D0C28392661001254E2 /* LaunchScreen.storyboard */; };
+		74812180283F9FFE00CAD7FF /* CalcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481217F283F9FFE00CAD7FF /* CalcModel.swift */; };
+		74812181283FA51100CAD7FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7481217D283F9F4300CAD7FF /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7401C8D22840DF6D0000FB6E /* CalcConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcConstants.swift; sourceTree = "<group>"; };
 		741A0CFE28392661001254E2 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		741A0D0128392661001254E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		741A0D0328392661001254E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		741A0D0528392661001254E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		741A0D0828392661001254E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		741A0D0A28392661001254E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		741A0D0D28392661001254E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		741A0D0F28392661001254E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7481217D283F9F4300CAD7FF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7481217F283F9FFE00CAD7FF /* CalcModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				741A0D0128392661001254E2 /* AppDelegate.swift */,
 				741A0D0328392661001254E2 /* SceneDelegate.swift */,
-				741A0D0528392661001254E2 /* ViewController.swift */,
-				741A0D0728392661001254E2 /* Main.storyboard */,
+				7481217E283F9F4900CAD7FF /* Model */,
+				7481217C283F9F4300CAD7FF /* View */,
+				7481217B283F9F3D00CAD7FF /* Controller */,
 				741A0D0A28392661001254E2 /* Assets.xcassets */,
 				741A0D0C28392661001254E2 /* LaunchScreen.storyboard */,
 				741A0D0F28392661001254E2 /* Info.plist */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		7481217B283F9F3D00CAD7FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				741A0D0528392661001254E2 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7481217C283F9F4300CAD7FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7481217D283F9F4300CAD7FF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7481217E283F9F4900CAD7FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7401C8D22840DF6D0000FB6E /* CalcConstants.swift */,
+				7481217F283F9FFE00CAD7FF /* CalcModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +155,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74812181283FA51100CAD7FF /* Main.storyboard in Resources */,
 				741A0D0E28392661001254E2 /* LaunchScreen.storyboard in Resources */,
 				741A0D0B28392661001254E2 /* Assets.xcassets in Resources */,
-				741A0D0928392661001254E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +170,8 @@
 			files = (
 				741A0D0628392661001254E2 /* ViewController.swift in Sources */,
 				741A0D0228392661001254E2 /* AppDelegate.swift in Sources */,
+				7401C8D32840DF6D0000FB6E /* CalcConstants.swift in Sources */,
+				74812180283F9FFE00CAD7FF /* CalcModel.swift in Sources */,
 				741A0D0428392661001254E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		741A0D0728392661001254E2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				741A0D0828392661001254E2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		741A0D0C28392661001254E2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,6 +240,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -270,6 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -290,6 +316,7 @@
 				DEVELOPMENT_TEAM = PTXD49XJ9U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculator;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +345,7 @@
 				DEVELOPMENT_TEAM = PTXD49XJ9U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculator;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
